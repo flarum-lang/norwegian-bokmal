@@ -255,6 +255,24 @@ core:
       search_placeholder: '=> core.ref.search_users'
       title: '=> core.ref.users'
       total_users: 'Brukere totalt: {count}'
+  api:
+    invalid_filter_type:
+      must_be_numeric_message: '{filter} må være numerisk.'
+      must_not_be_array_message: '{filter} filteret må ikke være en matrise.'
+      must_not_be_multidimensional_array_message: '{filter} filteret må ikke være en flerdimensjonal matrise.'
+    invalid_username_message: 'Brukernavnet kan bare inneholde bokstaver, tall og bindestreker.'
+  email:
+    activate_account:
+      body: "Hei {username}!\n\nNoen (forhåpentligvis du!) har registrert seg på {forum} med denne e-postadressen.\n\nHvis dette var deg, klikker du bare på følgende lenke og kontoen din aktiveres:\n{url}\n\nHvis du ikke registrerte deg, vennligst ignorer denne e-posten.\n"
+      subject: 'Aktiver din nye konto'
+    confirm_email:
+      body: "Hei, {username}!\n\nNoen (forhåpentligvis du!) har endret e-postadressen sin på {forum} til denne.\n\nHvis dette var deg, klikker du bare på følgende lenke og e-posten din vil bli bekreftet:\n{url}\n\nHvis dette ikke var deg, vennligst ignorer denne e-posten.\n"
+      subject: 'Bekreftt din nye epost adresse'
+    reset_password:
+      body: "Hei, {username}!\n\nNoen (forhåpentligvis du!) har sendt inn en forespørsel om glemt passord for kontoen din på {forum}.\n\nHvis dette var deg, klikk på følgende lenke for å tilbakestille passordet ditt:\n{url}\n\nHvis du ikke ønsker å endre passordet ditt, bare ignorer denne e-posten og ingenting vil skje.\n"
+    send_test:
+      body: "Hei, {username}!\n\nDette er en test-e-post for å bekrefte at Flarum-e-postkonfigurasjonen din fungerer som den skal.\n\nHvis dette var deg, betyr denne e-posten at konfigurasjonen din fungerer!\n\nHvis dette ikke var deg, vennligst ignorer denne e-posten.\n"
+      subject: 'Flarum emailtest'
   forum:
     change_email:
       confirm_password_placeholder: '=> core.ref.confirm_password'
@@ -404,6 +422,7 @@ core:
       empty_text: 'Her er det visst ingenting å se.'
       global_logout:
         heading: 'Global utlogging'
+        help_text: 'Tømmer nåværende cookie sesjon, avslutter alle sesjoner, trekker tilbake utvikler token, og ugyldiggjør epostbekreftelser eller emailer med passord tilbakestilling.'
         log_out_button: '=> core.ref.log_out'
       hide_access_token: 'Skjul token'
       last_activity: 'Sist aktivitet'
@@ -426,6 +445,7 @@ core:
     settings:
       account_heading: Konto
       notification_checkbox_a11y_label_template: 'Motta "{beskrivelse}" notifikasjoner via {metode}'
+      notify_by_web_heading: Web
       notify_discussion_renamed_label: 'Noen gir nytt navn til en diskusjon jeg startet'
       privacy_disclose_online_label: 'Tillat andre å se når jeg er pålogget'
       privacy_heading: Privatliv
@@ -445,3 +465,84 @@ core:
       delete_error_message: 'Sletting av bruker <i>{username} ({email})</i> feilet'
       delete_success_message: 'Bruker <i>{username} ({email})</i> ble slettet'
       toggle_dropdown_accessible_label: 'Veksle i nedtrekksmenyen for brukerkontroll'
+    user_email_confirmation:
+      resend_button: 'Send epostbekreftelse på nytt'
+      sent_message: Sendt
+    welcome_hero:
+      hide: 'Skjul velkomstmelding'
+  lib:
+    alert:
+      dismiss_a11y_label: 'Avvis varsel'
+    badge:
+      hidden_tooltip: Skjult
+    debug_button: Feilsøk
+    dropdown:
+      toggle_dropdown_accessible_label: 'Veksle nedtrekksmeny'
+    edit_user:
+      activate_button: 'Aktiver bruker'
+      groups_heading: Grupper
+      nothing_available: 'Du har ikke tillatelse til å endre denne brukeren.'
+      set_password_label: 'Lag nytt passord'
+    error:
+      circular_dependencies_message: 'Sirkulære avhengigheter oppdaget: {extensions}. Avbryter. Deaktiver en av utvidelsene og prøv igjen.'
+      dependent_extensions_message: 'Kan ikke deaktivere {extension} før den følgende utvidelsen med avhengighet er deaktivert: {extensions}'
+      extension_initialiation_failed_message: '{extension} kunne ikke initialiseres, sjekk nettleserkonsollen for mer informasjon.'
+      generic_cross_origin_message: 'Oops! Noe gikk galt under en forespørsel om kryssopprinnelse. Last inn siden på nytt og prøv igjen.'
+      generic_message: 'Oops! Noe gikk galt. Last inn siden på nytt og prøv igjen.'
+      missing_dependencies_message: 'Kan ikke aktivere {extension} før følgende avhengigheter er aktivert: {extensions}'
+      not_found_message: 'Den forespurte ressursen ble ikke funnet.'
+      payload_too_large_message: 'Forespørselsnyttelasten var for stor.'
+      permission_denied_message: 'Du har ikke tillatelse til å gjøre det.'
+      rate_limit_exceeded_message: 'Du går litt for fort frem. Prøv igjen om noen sekunder.'
+      render_failed_message: 'Beklager, vi oppdaget en feil under visning av dette innholdet. Hvis du er en bruker, prøv igjen senere. Hvis du er administrator, ta en titt i Flarum-loggfilene dine for mer informasjon.'
+    meta_titles:
+      with_page_title: '{pageNumber, flertall, =1 {{pageTitle} - {forumName}} andre {{pageTitle}: Side # - {forumName}}}'
+    modal:
+      close: Lukk
+    nav:
+      drawer_button: 'Åpne navigasjonsskuffen'
+    series:
+      three_text: '{first}, {second}, og {third}'
+      two_text: '{first} og {second}'
+    username:
+      deleted_text: '[slettet]'
+  ref:
+    all_discussions: 'Alle diskusjoner'
+    change_email: 'Endre emailadresse'
+    change_password: 'Endre passord'
+    color: Farge
+    confirm_email: 'Bekreft epost'
+    confirm_password: 'Bekreft passord'
+    confirmation_email_sent: 'Vi har sendt en bekreftelses-e-post til {email}. Hvis den ikke kommer snart, sjekk søppelpostmappen din.'
+    custom_footer_text: 'Legg til HTML som skal vises helt nederst på siden.'
+  views:
+    admin:
+      extensions:
+        disable: Deaktiver
+        empty: 'Ingen installerte utvidelser'
+        enable: Aktiver
+        name: 'Navn på utvidelse'
+        package_name: 'Navn på pakke'
+        version: Versjon
+      info:
+        caption: Applikasjonsinfo
+      title: Administrasjon
+    confirm_email:
+      text: 'Klikk på knappen nedenfor for å bekrefte e-postadressen til kontoen din.'
+    content:
+      javascript_disabled_message: 'Dette nettstedet vises best i en moderne nettleser med JavaScript aktivert.'
+      load_error_message: 'Noe gikk galt under forsøk på å laste inn den fullstendige versjonen av dette nettstedet. Prøv å hardoppdatere denne siden for å fikse feilen.'
+    error:
+      csrf_token_mismatch: 'Du har vært inaktiv for lenge.'
+      csrf_token_mismatch_return_link: 'Gå tilbake for å prøve igjen'
+      invalid_confirmation_token: 'Denne bekreftelseslenken er allerede brukt eller er ugyldig.'
+      not_authenticated: 'Du har ikke tillatelse til å få tilgang til denne siden. Prøv igjen etter pålogging.'
+      not_found: 'Siden du ba om ble ikke funnet.'
+      not_found_return_link: 'Returner til {forum}'
+      permission_denied: 'Du har ikke tillatelse til å få tilgang til denne siden.'
+      unknown: 'Det oppstod en feil under forsøk på å laste denne siden.'
+    log_out:
+      log_out_confirmation: 'Er du sikker på at du vil logge ut av {forum}?'
+    reset_password:
+      confirm_password_label: 'Bekreft nytt passord'
+      new_password_label: 'Nytt passord'
