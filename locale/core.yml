@@ -404,3 +404,44 @@ core:
       empty_text: 'Her er det visst ingenting å se.'
       global_logout:
         heading: 'Global utlogging'
+        log_out_button: '=> core.ref.log_out'
+      hide_access_token: 'Skjul token'
+      last_activity: 'Sist aktivitet'
+      never: '=> core.ref.never'
+      new_access_token_button: '=> core.ref.new_token'
+      new_access_token_modal:
+        submit_button: 'Lag token'
+        title: '=> core.ref.new_token'
+        title_placeholder: Tittel
+      revoke_access_token: 'Trekk tilbake'
+      revoke_access_token_confirmation: '=> core.ref.generic_confirmation_message'
+      session_terminated: '{count, plural, one {Session terminated} other {# Sessions terminated}}.'
+      session_termination_failed: 'En feil oppstod under terminering av sesjoner.'
+      sessions_heading: 'Aktive sesjoner'
+      show_access_token: 'Se token'
+      terminate_all_other_sessions: 'Avslutt alle andre sesjoner'
+      terminate_session: Avslutt
+      token_revoked: 'Token trukket tilbake.'
+      token_title_placeholder: /
+    settings:
+      account_heading: Konto
+      notification_checkbox_a11y_label_template: 'Motta "{beskrivelse}" notifikasjoner via {metode}'
+      notify_discussion_renamed_label: 'Noen gir nytt navn til en diskusjon jeg startet'
+      privacy_disclose_online_label: 'Tillat andre å se når jeg er pålogget'
+      privacy_heading: Privatliv
+    sign_up:
+      log_in_text: 'Har du allerede en konto? <a>Logg inn</a>'
+      welcome_text: 'Velkommen, {username}!'
+    user:
+      avatar_upload_button: 'Last opp'
+      avatar_upload_tooltip: 'Last opp ny avatar'
+      in_discussion_text: 'I {discussion}'
+      joined_date_text: 'Ble med {ago}'
+      online_text: Pålogget
+      posts_empty_text: 'Det ser ikke ut som det er noen poster her.'
+    user_controls:
+      button: Kontroller
+      delete_confirmation: 'Er du sikker på at du vil slette denne brukeren? Brukerens poster vil IKKE bli slettet.'
+      delete_error_message: 'Sletting av bruker <i>{username} ({email})</i> feilet'
+      delete_success_message: 'Bruker <i>{username} ({email})</i> ble slettet'
+      toggle_dropdown_accessible_label: 'Veksle i nedtrekksmenyen for brukerkontroll'
