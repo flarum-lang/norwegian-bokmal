@@ -32,6 +32,7 @@ CHANGELOG
 * [`flarum/approval`](https://github.com/flarum/approval)
 * [`flarum/bbcode`](https://github.com/flarum/bbcode)
 * [`flarum/emoji`](https://github.com/flarum/emoji)
+* [`flarum/extension-manager`](https://github.com/flarum/extension-manager)
 * [`flarum/lock`](https://github.com/flarum/lock)
 * [`flarum/pusher`](https://github.com/flarum/pusher)
 * [`flarum/sticky`](https://github.com/flarum/sticky)
