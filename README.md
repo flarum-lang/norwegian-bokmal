@@ -6,7 +6,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/flarum-lang/norwegian-bokmal)](https://packagist.org/packages/flarum-lang/norwegian-bokmal/stats) 
 [![Monthly Downloads](https://img.shields.io/packagist/dm/flarum-lang/norwegian-bokmal)](https://packagist.org/packages/flarum-lang/norwegian-bokmal/stats) 
 
-This language pack contains Norwegian Bokmål translations for Flarum (compatible with `1.6.0` or newer) and popular extensions. Full list of supported extensions is available below.
+This language pack contains Norwegian Bokmål translations for Flarum (compatible with `2.0.0` or newer) and popular extensions. Full list of supported extensions is available below.
 
 
 ## Installation
@@ -14,7 +14,7 @@ This language pack contains Norwegian Bokmål translations for Flarum (compatibl
 You can install language pack using [Composer](https://getcomposer.org/):
 
 ```console
-composer require flarum-lang/norwegian-bokmal:dev-master
+composer require "flarum-lang/norwegian-bokmal:@dev"
 ```
 
 Then enable extension in admin panel of your Flarum.
