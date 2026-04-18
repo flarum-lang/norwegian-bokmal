@@ -14,7 +14,7 @@ This language pack contains Norwegian Bokmål translations for Flarum (compatibl
 You can install language pack using [Composer](https://getcomposer.org/):
 
 ```console
-composer require flarum-lang/norwegian-bokmal:dev-master
+composer require "flarum-lang/norwegian-bokmal:@dev"
 ```
 
 Then enable extension in admin panel of your Flarum.
