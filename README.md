@@ -86,7 +86,6 @@ php flarum cache:clear
 | [`annonny/flarum-dice`](https://github.com/mizhiyugan529/flarum-dice) | [![Translation status](https://weblate.rob006.net/widgets/flarum/nb/annonny-dice/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/annonny-dice/nb/) |
 | [`archlinux-de/flarum-click-image`](https://github.com/archlinux-de/flarum-click-image) | [![Translation status](https://weblate.rob006.net/widgets/flarum/nb/archlinux-de-click-image/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/archlinux-de-click-image/nb/) |
 | [`askvortsov/flarum-article-series`](https://github.com/askvortsov1/flarum-article-series) | [![Translation status](https://weblate.rob006.net/widgets/flarum/nb/askvortsov-article-series/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/askvortsov-article-series/nb/) |
-| [`askvortsov/flarum-checklist`](https://github.com/askvortsov1/flarum-checklist) | [![Translation status](https://weblate.rob006.net/widgets/flarum/nb/askvortsov-checklist/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/askvortsov-checklist/nb/) |
 | [`askvortsov/flarum-help-tags`](https://github.com/askvortsov1/flarum-help-tags) | [![Translation status](https://weblate.rob006.net/widgets/flarum/nb/askvortsov-help-tags/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/askvortsov-help-tags/nb/) |
 
 <!-- various-extensions-list-stop -->
