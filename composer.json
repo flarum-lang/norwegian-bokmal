@@ -1,26 +1,20 @@
 {
 	"name": "flarum-lang/norwegian-bokmal",
+	"description": "Norwegian Bokmål Language Pack for Flarum",
 	"type": "flarum-extension",
-	"description": "Norwegian Bokmål language pack for Flarum.",
-	"homepage": "https://github.com/flarum-lang/norwegian-bokmal",
 	"keywords": [
-		"locale",
-		"flarum",
-		"flarum-locale",
-		"nb-locale",
-		"norwegian-bokmal-locale",
-		"norwegian-bokmal"
+		"flarum-locale"
 	],
+	"homepage": "https://github.com/flarum-lang/norwegian-bokmal",
 	"license": "MIT",
 	"support": {
 		"issues": "https://github.com/flarum-lang/norwegian-bokmal/issues",
+		"forum": "https://discuss.flarum.org/d/40204",
 		"source": "https://github.com/flarum-lang/norwegian-bokmal"
 	},
 	"require": {
 		"flarum/core": "^2.0"
 	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
 	"extra": {
 		"flarum-extension": {
 			"title": "Norwegian Bokmål",
@@ -33,13 +27,7 @@
 		},
 		"flarum-locale": {
 			"code": "nb",
-			"title": "Norwegian Bokmål"
-		},
-		"extiverse": {
-			"discuss": ""
-		},
-		"branch-alias": {
-			"dev-master": "1.x-dev"
+			"title": "Norsk bokmål"
 		}
 	}
 }
